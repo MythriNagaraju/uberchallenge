@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+{% load bootstrap3 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+<html>
+<head>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="/static/css/base.css">-->
+    <link rel="stylesheet" href="/static/foodtrucks/panel.css">
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.8/d3.min.js"></script>
+    <script src="//d3js.org/colorbrewer.v1.min.js"></script>
+</head>
+<body background="{% static "foodtrucks/SanFrancisco.jpg" %}">
+<h1><font color="red"> San Francisco Food Trucks </font></h1>
+<body>
+    <form class="form" id="addressForm" method="post" onreset="clearPanel()";>
+      {% csrf_token %}
+      <input type="text" name="address" placeholder="Enter an address" size="60" id="address">
+      <button type="submit" class="glyphicon glyphicon-search" style="width: 55px; height: 27px;" ></button>
+      {% if foodtrucks|length > 0 %}
+	<br>
+	<div class="panel" id="searchResults">
+	  <div class="panel-body">
+	  <table class="table table-curved">
+	  {% for foodtruck in foodtrucks %}
+	    <tr>
+              <font size="4" color=black><b>{{ foodtruck.Applicant }}</b></font><br>
+              <font size="2">{{ foodtruck.Address }}</font><br>
+            </tr>
+            <br>
+	  {% endfor %}
+	  </div>
+	  </table>
+	</div>
+      {% else %}
+	<br><br>
+	<p><font size="4" color=red><b>No foodtrucks in the vicinity</font></b></p>
+      {% endif %}
+    </form>
+    <!--<script type="text/javascript">
+      function clearPanel()
+      {
+      document.getElementById("searchResults").remove();
+      }
+    </script>-->
+</body>
+</html>
+<script type="text/javascript">
+  window.onbeforeunload(function(){
+      document.getElementById("address").val("");
+      document.getElementById("searchResults").remove();
+  });
+</script>
+
+
