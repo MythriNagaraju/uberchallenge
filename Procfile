@@ -1,1 +1,1 @@
-web: gunicorn uberchallenge:app
+web: gunicorn run:uberchallenge
