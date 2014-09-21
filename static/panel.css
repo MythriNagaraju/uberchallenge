@@ -1,0 +1,14 @@
+/*body {
+    background:#c33;
+}*/
+
+.panel {
+    background: none;
+    height: 60px;
+    width: 453px;
+}
+
+.panel .panel-body{
+    background: rgba(46, 51, 56, 0.2)!important;
+}
+
