@@ -1,1 +1,1 @@
-web: gunicorn run:uberchallenge
+web: gunicorn uberchallenge.wsgi --log-file -
