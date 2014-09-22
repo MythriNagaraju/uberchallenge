@@ -7,7 +7,7 @@ I chose the full-stack technical track.
 
 For the front end, I have used twitter bootstrap and for the backend, I have used Python-Django framework and also PostgreSQL for the database.
 
-I know that Uber uses Python as a primary language for the backend, and also I have been developing in Python-Django the last two years. So, I had no second thoughts about what technology to use for the backend. I have worked with MySQL, PostgreSQL and MongoDB before, but chose PostgreSQL for it’s ease of use.
+I know that Uber uses Python as a primary language for the backend, and also I have been developing in Python-Django the last one year. So, I had no second thoughts about what technology to use for the backend. I have worked with MySQL, PostgreSQL and MongoDB before, but chose PostgreSQL for it’s ease of use.
 
 I have just started playing around with twitter bootstrap in my current job and I learnt more of while developing this app. I have also used a little bot of CSS for the static files.
 
