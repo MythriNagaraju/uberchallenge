@@ -15,8 +15,8 @@ I used the Python geocoder module to calculate the distance between an input add
 
 A few more things I would have liked to add to the existing functionality:
 
-- I realized just before submission that I could have made use of the Google Maps API and     show the food trucks on the map , instead of display it as a list, but I realized it a little too late to implement it more fully
-- I could have added more tests
+- Use Google Maps API to drop pins on the nearby foodtrucks' locations
+- More tests
 
 
 
