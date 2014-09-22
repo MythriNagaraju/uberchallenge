@@ -1,4 +1,5 @@
-This is a prototype for the Food Trucks service
+This is a prototype for the Food Trucks service. It is hosted at http://sleepy-everglades-9394.herokuapp.com/
+(The source code is at https://github.com/MythriNagaraju/uberchallenge)
 
 When the user enters a valid address, it displays a list of nearby food trucks.
 
